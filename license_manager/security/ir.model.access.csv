@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lm_manager_user,license_manager.lm_license,model_lm_license,base.group_user,1,1,1,1
+access_lm_eula_user,license_manager.lm_eula,model_lm_eula,base.group_user,1,1,1,1
