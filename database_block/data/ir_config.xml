@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="license_server" model="ir.config_parameter">
+            <field name="key">license.url</field>
+            <field name="value">http://localhost:8016</field>
+        </record>
+    </data>
+</odoo>

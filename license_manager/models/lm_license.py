@@ -69,15 +69,15 @@ class License(models.Model):
 # --------------------------------------------
 # Onchange methods & Constraints
 # --------------------------------------------
-    @api.constrains('date_from')
-    def _check_date_from(self):
-        today = fields.Datetime.now()
-        if self.date_from and self.date_from < today:
-            raise ValidationError(_(
-                "The selected Start Date {start_dt} cannot be less than today"
-            ).format(
-                start_dt = self.date_from
-            ))
+    # @api.constrains('date_from')
+    # def _check_date_from(self):
+    #     today = fields.Datetime.now()
+    #     if self.date_from and self.date_from < today:
+    #         raise ValidationError(_(
+    #             "The selected Start Date {start_dt} cannot be less than today"
+    #         ).format(
+    #             start_dt = self.date_from
+    #         ))
 
 
     @api.onchange('date_to')
